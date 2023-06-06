@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fullNameContainer"
+            style="@style/EditProfileTextInput"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="@string/def_fullname"
+            android:inputType="textPersonName|textCapWords"
+            android:padding="4dp"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:endIconMode="clear_text"
+            app:layout_constraintBottom_toTopOf="@+id/space2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_weight="5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:layout_constraintVertical_weight="1.5">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fullNameField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAppearance="@style/AppearanceText"
+                android:theme="@style/EditProfileEditText" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Space
+            android:id="@+id/space2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/nickContainer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fullNameContainer"
+            app:layout_constraintVertical_weight="0.1" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nickContainer"
+            style="@style/EditProfileTextInput"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/def_nickname"
+            android:inputType="textLongMessage"
+            android:padding="4dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="17sp"
+            app:endIconMode="clear_text"
+            app:layout_constraintBottom_toTopOf="@+id/phoneContainer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/space2"
+            app:layout_constraintVertical_weight="1.2"
+            app:startIconDrawable="@drawable/ic_person_blue_24dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nickField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/AppearanceText"
+                android:theme="@style/EditProfileEditText" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/phoneContainer"
+            style="@style/EditProfileTextInput"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/def_phone"
+            android:inputType="phone"
+            android:padding="4dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="17sp"
+            app:endIconMode="clear_text"
+            app:layout_constraintBottom_toTopOf="@+id/emailContainer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nickContainer"
+            app:layout_constraintVertical_weight="1.2"
+            app:startIconDrawable="@drawable/ic_phone_android_blue_24dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phoneField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/EditProfileEditText" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailContainer"
+            style="@style/EditProfileTextInput"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/def_email"
+            android:inputType="textEmailAddress"
+            android:padding="4dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="17sp"
+            app:endIconMode="clear_text"
+            app:layout_constraintBottom_toTopOf="@+id/locationContainer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phoneContainer"
+            app:layout_constraintVertical_weight="1.2"
+            app:startIconDrawable="@drawable/ic_email_blue_24dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/EditProfileEditText" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/locationContainer"
+            style="@style/EditProfileTextInput"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/def_location"
+            android:inputType="textCapWords|textLongMessage"
+            android:padding="4dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="17sp"
+            app:endIconCheckable="false"
+            app:endIconMode="clear_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailContainer"
+            app:layout_constraintVertical_weight="1.2"
+            app:startIconDrawable="@drawable/ic_location_city_blue_24dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/locationField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/EditProfileEditText" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

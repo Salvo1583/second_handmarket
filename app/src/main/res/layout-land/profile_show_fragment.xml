@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="0dp"
+    android:layout_marginEnd="0dp"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3255814" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/photo_background6cut"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageProfile"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/image_profile"
+            android:foregroundGravity="center"
+            android:padding="3dp"
+            android:src="@drawable/male_profile_image"
+            app:civ_border_color="@color/strokeCircle"
+            app:civ_border_width="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:srcCompat="@drawable/male_profile_image" />
+
+        <ProgressBar
+            android:id="@+id/progressBar4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/imageProfile"
+            app:layout_constraintEnd_toEndOf="@+id/imageProfile"
+            app:layout_constraintStart_toStartOf="@+id/imageProfile"
+            app:layout_constraintTop_toTopOf="@+id/imageProfile" />
+
+        <TextView
+            android:id="@+id/ratingUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_ratingvalue_profile"
+            android:drawableStart="@drawable/ic_star_black_36dp"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="#FFFFFF"
+            android:textSize="36sp"
+            android:visibility="invisible"
+            app:drawableTint="@color/fillRating"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageProfile" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/fullNameField"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="@string/def_fullname"
+            android:textAlignment="center"
+            android:textAppearance="@style/AppearanceText"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/nickField"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_weight="1.5" />
+
+        <Space
+            android:id="@+id/space"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_weight="0.1" />
+
+        <ImageView
+            android:id="@+id/nickIcon"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/human_logo"
+            app:layout_constraintBottom_toBottomOf="@+id/nickField"
+            app:layout_constraintEnd_toStartOf="@+id/nickField"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/nickField"
+            app:layout_constraintVertical_weight="1.2"
+            app:srcCompat="@drawable/ic_person_blue_24dp" />
+
+        <TextView
+            android:id="@+id/nickField"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center_vertical"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="@string/def_nickname"
+            android:textAppearance="@style/AppearanceText"
+            app:layout_constraintBottom_toTopOf="@+id/phoneField"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_weight="5"
+            app:layout_constraintStart_toEndOf="@+id/nickIcon"
+            app:layout_constraintTop_toBottomOf="@+id/fullNameField"
+            app:layout_constraintVertical_weight="1.2" />
+
+        <ImageView
+            android:id="@+id/phoneIcon"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/phone_logo"
+            app:layout_constraintBottom_toBottomOf="@+id/phoneField"
+            app:layout_constraintEnd_toStartOf="@+id/phoneField"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/phoneField"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintVertical_weight="1.2"
+            app:srcCompat="@drawable/ic_phone_android_blue_24dp" />
+
+        <TextView
+            android:id="@+id/phoneField"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center_vertical"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="@string/def_phone"
+            android:textAppearance="@style/AppearanceText"
+            app:layout_constraintBottom_toTopOf="@+id/emailField"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_weight="5"
+            app:layout_constraintStart_toEndOf="@+id/phoneIcon"
+            app:layout_constraintTop_toBottomOf="@+id/nickField"
+            app:layout_constraintVertical_weight="1.2" />
+
+        <ImageView
+            android:id="@+id/emailIcon"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/email_logo"
+            app:layout_constraintBottom_toBottomOf="@+id/emailField"
+            app:layout_constraintEnd_toStartOf="@+id/emailField"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/emailField"
+            app:layout_constraintVertical_weight="1.2"
+            app:srcCompat="@drawable/ic_email_blue_24dp" />
+
+        <TextView
+            android:id="@+id/emailField"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center_vertical"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="@string/def_email"
+            android:textAppearance="@style/AppearanceText"
+            app:layout_constraintBottom_toTopOf="@+id/locationField"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_weight="5"
+            app:layout_constraintStart_toEndOf="@+id/emailIcon"
+            app:layout_constraintTop_toBottomOf="@+id/phoneField"
+            app:layout_constraintVertical_weight="1.2" />
+
+        <ImageView
+            android:id="@+id/locationIcon"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/loc_logo"
+            app:layout_constraintBottom_toBottomOf="@+id/locationField"
+            app:layout_constraintEnd_toStartOf="@+id/locationField"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/locationField"
+            app:layout_constraintVertical_bias="1.0"
+            app:layout_constraintVertical_weight="1.2"
+            app:srcCompat="@drawable/ic_location_city_blue_24dp" />
+
+        <TextView
+            android:id="@+id/locationField"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center_vertical"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="@string/def_location"
+            android:textAppearance="@style/AppearanceText"
+            app:layout_constraintBottom_toBottomOf="@+id/space"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_weight="5"
+            app:layout_constraintStart_toEndOf="@+id/locationIcon"
+            app:layout_constraintTop_toBottomOf="@+id/emailField"
+            app:layout_constraintVertical_weight="1.2" />
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

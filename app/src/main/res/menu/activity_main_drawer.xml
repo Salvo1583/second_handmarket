@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_thriftville_icon"
+            android:title="@string/menu_home" />
+
+        <item
+            android:id="@+id/myItemList"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/my_item_list" />
+
+        <item
+            android:id="@+id/itemsOfInterestListFragment"
+            android:icon="@drawable/ic_favorite_black_24dp"
+            android:title="@string/items_of_interest_list_fragment" />
+
+        <item
+            android:id="@+id/boughtItemsListFragment"
+            android:icon="@drawable/ic_shopping_basket_black_24dp"
+            android:title="@string/bought_items" />
+
+        <item
+            android:id="@+id/notificationFragment"
+            android:icon="@drawable/ic_mail_black_24dp"
+            android:title="@string/notifications" />
+
+        <item
+            android:id="@+id/showProfileFragment"
+            android:icon="@drawable/ic_person_blue_24dp"
+            android:title="@string/menu_profile" />
+
+
+        <item
+            android:id="@+id/authentication"
+            android:icon="@drawable/ic_power_settings_new_black_24dp"
+            android:title="@string/log_out" />
+
+
+
+    </group>
+
+
+
+</menu>

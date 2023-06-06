@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "500555743419",
+    "firebase_url": "https://second-hand-market-newrelease.firebaseio.com",
+    "project_id": "second-hand-market-newrelease",
+    "storage_bucket": "second-hand-market-newrelease.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:500555743419:android:87ffe64c5d42194ee4e99e",
+        "android_client_info": {
+          "package_name": "it.polito.mad.group18.second_handmarket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "500555743419-6vjf9hp303cnhuj4klsu57dqhmrbp7v1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "it.polito.mad.group18.second_handmarket",
+            "certificate_hash": "f5cff3a904ff213d95b0b8af5ff0fe09edc5b982"
+          }
+        },
+        {
+          "client_id": "500555743419-36nps3oi8ffguqq88om9tjlv4s7upema.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7iaBg2MwdJltfcLm2dl-ER--uAIqoNm4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "500555743419-36nps3oi8ffguqq88om9tjlv4s7upema.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

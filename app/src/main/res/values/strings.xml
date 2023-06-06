@@ -1,0 +1,154 @@
+<resources>
+    <string name="app_name">ThriftVille</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="dialog_message">In Message Center there are updates on items you are interested in.</string>
+    <string name="menu_home">&#160;Items on Sale</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_item">ItemView</string>
+    <!-- Names for fragment sections -->
+    <string name="show_profile_name">  &#160; Profile</string>
+    <string name="edit_profile_name"> &#160; Edit Profile</string>
+    <string name="item_details_name">&#160; Item Details</string>
+    <string name="item_edit_name">  &#160;Item Edit</string>
+    <string name="notification_name"> &#160; Message Center</string>
+    <string name="myitems_list_name"> &#160; My Items</string>
+    <string name="rating_name">  &#160;Reviews</string>
+    <string name="authentication_name">&#160; Authentication</string>
+    <string name="my_item_list">&#160;My Item List</string>
+    <string name="items_of_interest_list_fragment">&#160;Items Of Interest</string>
+    <string name="bought_items">&#160;Bought Items</string>
+    <string name="notifications">Message Center</string>
+    <!-- END Names for fragment sections -->
+
+    <!-- Default values for profile info -->
+    <string name="def_fullname">Full Name</string>
+    <string name="def_nickname">Nickname</string>
+    <string name="def_phone">Phone Number</string>
+    <string name="def_email">Email</string>
+    <string name="def_location">Geographic Area</string>
+    <string name="def_password">Password</string>
+    <string name="password_dropped">********</string>
+    <string name="help_fullname">&lt;First&gt; &lt;Last&gt;. Only visible to you.</string>
+    <string name="help_fullname_inserted">It will be visible only to you</string>
+    <string name="help_nickname">Your username everyone can see</string>
+    <string name="help_email">Your login credential</string>
+    <string name="help_location">Click to pin the position from the map</string>
+    <!-- END Default values for profile info -->
+    <!-- Content description of photos/icons/logos -->
+    <string name="image_profile">Personal profile photo</string>
+    <string name="new_photo">New photo button</string>
+    <string name="human_logo">Human logo</string>
+    <string name="phone_logo">Phone logo</string>
+    <string name="email_logo">Email logo</string>
+    <string name="loc_logo">Location logo</string>
+    <!-- END Content description of photos/icons/logos -->
+
+    <string name="home_second">Home Second</string>
+
+    <string name="description">Insert Item Description </string>
+    <string name="price">Price</string>
+    <string name="slash">\\</string>
+    <string name="title_card">Insert Title Advertisement</string>
+    <string name="price_card">Insert Price</string>
+    <string name="location_card">Insert Location Adv</string>
+
+    <string name="expiredate_card">Insert Expire Date</string>
+    <string name="expiredate_default">dd/mm/yyyy</string>
+    <string name="modify_card">Modify</string>
+    <string name="image_card">Advertisement Image shown on the Card</string>
+    <string name="delete_adv">Delete</string>
+    <!-- Sign in options -->
+    <string name="sign_in_message">Please sign in with your email</string>
+    <string name="username">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="google_sign_in">Sign in with Google</string>
+    <string name="register_message">Not yet registered?</string>
+    <string name="create_account">Register now</string>
+    <!-- END Sign in options -->
+    <string name="log_out">Log Out</string>
+
+
+    <string name="edit_profile">Edit profile</string>
+    <string name="save_profile">Save profile</string>
+    <string name="register_profile_r">Register</string>
+
+    <!-- Rating options -->
+    <string name="show_rate">Show rating</string>
+    <string name="hide_rate">Hide rating</string>
+
+    <string name="rate_vote">Rate</string>
+    <string name="rating_empty_description">The buyer didn\'t leave any comment on the item.</string>
+    <string name="rating_description_title">Please report a comment (optional):</string>
+    <string name="confirm_rate">Confirm</string>
+    <string name="cancel_rate">Cancel</string>
+    <!-- END Rating options -->
+    <!-- Rating reviews -->
+    <string name="number_ratings">%1$d reviews</string>
+    <string name="number_rating">1 review</string>
+    <string name="rater_user_review">From: &lt;b&gt;%1$s&lt;/b&gt;</string>
+    <string name="item_rated_review">&lt;b&gt;%1$s&lt;/b&gt;</string>
+    <!-- END Rating reviews -->
+
+
+
+
+    <!-- Prompt spinners -->
+    <string name="prompt_category">Select Item Category</string>
+    <string name="prompt_subcategory">Select Item SubCategory</string>
+
+    <!-- END Prompt spinners -->
+
+    <string name="status">Status:</string>
+    <string name="available">Available</string>
+    <string name="unavailable">Unavailable</string>
+    <string name="sold">Sold</string>
+    <string name="sell_to">Sell To:</string>
+    <string name="category">Category</string>
+    <string name="sub_category">Sub-Category</string>
+    <string name="item_title">Item Title</string>
+    <string name="title">Title</string>
+    <string name="position">Location:</string>
+    <string name="location_example">City, State</string>
+    <string name="item_price">Insert Item Price</string>
+    <string name="expire_date">Expire Date:</string>
+    <string name="adv_created">New Advertisement Created</string>
+    <string name="message_sold">This item has been sold</string>
+    <string name="message_unavailable">This item is temporarily unavailable</string>
+    <string name="message_available">This item is available again</string>
+    <string name="changes_applied">Changes applied</string>
+    <string name="item_edit_fail">It is not allowed to save an item if at least one information is missing (picture included)</string>
+    <string name="permission_denied">Permission denied</string>
+    <string name="required">Required</string>
+    <string name="required_number">Required Valid Number</string>
+    <string name="describe_product">Describe your product</string>
+    <string name="insert_title">Insert here the title of the advertisement</string>
+
+    <!-- Item Details-->
+    <string name="category_example">Category</string>
+    <string name="subcategory_example">Subcategory</string>
+    <string name="status_details">Item Status</string>
+    <string name="item_creator">Item Creator</string>
+    <string name="description_details">Item Description</string>
+    <string name="map_title">Location in Map</string>
+    <string name="interested_users">Interested Users</string>
+    <string name="buyer">Sold to:</string>
+    <string name="snack_interested">The owner has been notified, see Message Center for updates</string>
+    <string name="toast_rating">Please select a value from star rating.</string>
+    <string name="item_reviewed">The buyer has reviewed your product</string>
+    <string name="no_interested">No Interested Users</string>
+
+    <!-- END Item Details -->
+
+
+</resources>
+

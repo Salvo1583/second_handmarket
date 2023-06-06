@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="it.polito.mad.group18.second_handmarket.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_nav_home_to_itemDetailsFragment"
+            app:destination="@id/itemDetailsFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit" />
+        <action
+            android:id="@+id/action_nav_home_to_authentication"
+            app:destination="@id/authentication"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit"
+            app:popUpTo="@id/nav_home"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_nav_home_to_notificationFragment"
+            app:destination="@id/notificationFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/itemDetailsFragment"
+        android:name="it.polito.mad.group18.second_handmarket.ItemDetailsFragment"
+        android:label="@string/item_details_name"
+        tools:layout="@layout/item_details_fragment">
+        <action
+            android:id="@+id/action_itemDetailsFragment_to_itemEditFragment"
+            app:destination="@id/itemEditFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit"
+            app:popUpTo="@id/itemEditFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_itemDetailsFragment_to_showProfileFragment"
+            app:destination="@id/showProfileFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemEditFragment"
+        android:name="it.polito.mad.group18.second_handmarket.ItemEditFragment"
+        android:label="@string/item_edit_name">
+        <action
+            android:id="@+id/action_itemEditFragment_to_itemDetailsFragment"
+            app:destination="@id/itemDetailsFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit"
+            app:popUpTo="@id/itemDetailsFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_itemEditFragment_to_myItemList"
+            app:destination="@id/myItemList"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit"
+            app:popUpTo="@id/myItemList"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/showProfileFragment"
+        android:name="it.polito.mad.group18.second_handmarket.ShowProfileFragment"
+        android:label="@string/show_profile_name"
+        tools:layout="@layout/profile_show_fragment">
+        <action
+            android:id="@+id/action_showProfileFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit" />
+        <action
+            android:id="@+id/action_showProfileFragment_to_ratingFragment"
+            app:destination="@id/ratingFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="it.polito.mad.group18.second_handmarket.EditProfileFragment"
+        android:label="@string/edit_profile_name"
+        tools:layout="@layout/profile_edit_fragment">
+        <action
+            android:id="@+id/action_editProfileFragment_to_showProfileFragment2"
+            app:destination="@id/showProfileFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit"
+            app:popUpTo="@id/showProfileFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_editProfileFragment_to_nav_home"
+            app:destination="@id/nav_home"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit"
+            app:popUpTo="@id/authentication"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_editProfileFragment_to_authentication"
+            app:destination="@id/authentication"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit"
+            app:popUpTo="@id/authentication"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/authentication"
+        android:name="it.polito.mad.group18.second_handmarket.auth.Authentication"
+        android:label="@string/authentication_name">
+        <action
+            android:id="@+id/action_authentication_to_nav_home"
+            app:destination="@id/nav_home"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit"
+            app:popUpTo="@id/authentication"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_authentication_to_editProfileFragment"
+            app:destination="@id/editProfileFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/myItemList"
+        android:name="it.polito.mad.group18.second_handmarket.ui.myItemsList.MyItemList"
+        android:label="@string/myitems_list_name">
+        <action
+            android:id="@+id/action_myItemList_to_editProfileFragment"
+            app:destination="@id/editProfileFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit" />
+        <action
+            android:id="@+id/action_myItemList_to_itemDetailsFragment"
+            app:destination="@id/itemDetailsFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit" />
+        <action
+            android:id="@+id/action_myItemList_to_itemEditFragment"
+            app:destination="@id/itemEditFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="it.polito.mad.group18.second_handmarket.notifications.NotificationFragment"
+        android:label="@string/notification_name">
+        <action
+            android:id="@+id/action_notificationFragment_to_itemDetailsFragment"
+            app:destination="@id/itemDetailsFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemsOfInterestListFragment"
+        android:name="it.polito.mad.group18.second_handmarket.ui.ItemsOfInterestList.ItemsOfInterestListFragment"
+        android:label="@string/items_of_interest_list_fragment" >
+        <action
+            android:id="@+id/action_itemsOfInterestListFragment_to_itemDetailsFragment"
+            app:destination="@id/itemDetailsFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/boughtItemsListFragment"
+        android:name="it.polito.mad.group18.second_handmarket.ui.BoughtItemsList.BoughtItemsListFragment"
+        android:label="@string/bought_items">
+        <action
+            android:id="@+id/action_boughtItemsListFragment_to_itemDetailsFragment"
+            app:destination="@id/itemDetailsFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/ratingFragment"
+        android:name="it.polito.mad.group18.second_handmarket.ui.rating.RatingFragment"
+        android:label="@string/rating_name" />
+</navigation>

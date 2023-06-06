@@ -1,0 +1,50 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textColor">@color/primary_text</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" />
+
+    <!-- TextInputLayout theme for edit pages -->
+    <style name="AppearanceText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="ErrorText" parent="TextAppearance.Design.Error">
+        <item name="android:textColor">@android:color/holo_red_light</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="HintText" parent="TextAppearance.Design.Hint">
+        <item name="android:textColor">@color/secondary_text</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">start|top</item>
+    </style>
+    <style name="EditProfileEditText" parent="Theme.AppCompat.Light">
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="colorControlNormal">@color/primary_text</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+    </style>
+
+    <style name="EditProfileTextInput" parent="Widget.Design.TextInputLayout">
+        <item name="android:textAppearance">@style/AppearanceText</item>
+        <item name="hintTextAppearance">@style/HintText</item>
+        <item name="boxBackgroundColor">@color/background_text</item>
+        <item name="startIconTint">@color/colorCard</item>
+        <item name="boxStrokeColor">@color/divider</item>
+    </style>
+    <!-- END TextInputLayout theme for edit pages -->
+</resources>

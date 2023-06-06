@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:id="@+id/layout"
+    tools:ignore="MissingDefaultResource">
+
+    <ProgressBar
+        android:id="@+id/progressBarGoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingDefaultResource">
+
+        <Space
+            android:id="@+id/space17"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/profile_list"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ScrollView
+            android:id="@+id/profile_list"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/space17"
+            app:layout_constraintVertical_weight="7">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="@id/profile_list"
+                app:layout_constraintEnd_toEndOf="@id/profile_list"
+                app:layout_constraintStart_toStartOf="@id/profile_list"
+                app:layout_constraintTop_toTopOf="@id/profile_list">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@drawable/photo_background6"
+                    app:layout_constraintBottom_toTopOf="@id/space18"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <Space
+                        android:id="@+id/space19"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintBottom_toTopOf="@+id/imageProfile"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_weight="0.3" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imageProfile"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="@android:color/transparent"
+                        android:padding="3dp"
+                        android:src="@drawable/male_profile_image"
+                        app:civ_border_color="@color/strokeCircle"
+                        app:civ_border_width="2dp"
+                        app:layout_constraintBottom_toBottomOf="@id/space20"
+                        app:layout_constraintDimensionRatio="1:1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.497"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/space19"
+                        app:layout_constraintVertical_weight="4"
+                        app:srcCompat="@drawable/male_profile_image" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageProfile"
+                        app:layout_constraintEnd_toEndOf="@+id/imageProfile"
+                        app:layout_constraintStart_toStartOf="@+id/imageProfile"
+                        app:layout_constraintTop_toBottomOf="@+id/space19" />
+
+                    <Space
+                        android:id="@+id/space20"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/imageProfile"
+                        app:layout_constraintVertical_weight="0.95" />
+
+                    <ImageButton
+                        android:id="@+id/addImageButton"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="@color/background_add_image"
+                        app:layout_constraintBottom_toTopOf="@+id/guideline9"
+                        app:layout_constraintDimensionRatio="1:1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.685"
+                        app:layout_constraintHorizontal_weight="1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/space19"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:layout_constraintVertical_weight="1"
+                        app:srcCompat="@drawable/ic_add_a_photo_white_24dp" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintGuide_percent="0.23" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <Space
+                    android:id="@+id/space18"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline8"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="@id/space21"
+                    app:layout_constraintGuide_percent="0.25"
+                    app:layout_constraintTop_toBottomOf="@+id/space18" />
+
+                <Space
+                    android:id="@+id/space21"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintBottom_toTopOf="@id/constraintLayout2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/guideline8"
+                    app:layout_constraintVertical_weight="0.5" />
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@android:color/white"
+                    app:layout_constraintBottom_toTopOf="@id/space22"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/space21"
+                    app:layout_constraintVertical_weight="6">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/fullNameContainer"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="start|center_vertical"
+                        android:hint="@string/def_fullname"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        app:boxStrokeColor="@color/primary_light"
+                        app:boxStrokeErrorColor="#FFFFFF"
+                        app:endIconMode="clear_text"
+                        app:helperText="@string/help_fullname"
+                        app:hintAnimationEnabled="true"
+                        app:hintEnabled="true"
+                        app:hintTextAppearance="@style/HintText"
+                        app:hintTextColor="@color/primary_light"
+                        app:layout_constraintBottom_toTopOf="@+id/nickContainer"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintHorizontal_weight="5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_weight="1">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/fullNameField"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="4dp"
+                            android:gravity="start|top"
+                            android:inputType="textPersonName|textCapWords"
+                            android:textColor="@color/primary_text"
+                            android:textSize="21sp"
+                            android:textStyle="bold" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/emailContainer"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="center|start"
+                        android:hint="@string/def_email"
+                        android:inputType="textEmailAddress"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingBottom="8dp"
+                        app:boxStrokeColor="@color/primary_light"
+                        app:endIconMode="clear_text"
+                        app:helperText="@string/help_email"
+                        app:hintTextColor="@color/primary_light"
+                        app:layout_constraintBottom_toTopOf="@+id/passwordContainer"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintHorizontal_weight="5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/phoneContainer"
+                        app:layout_constraintVertical_weight="1"
+                        app:startIconDrawable="@drawable/ic_email_blue_24dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/emailField"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="textEmailAddress"
+                            android:textSize="21sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/phoneContainer"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="center|start"
+                        android:hint="@string/def_phone"
+                        android:inputType="phone"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingBottom="8dp"
+                        app:boxStrokeColor="@color/primary_light"
+                        app:endIconMode="clear_text"
+                        app:hintTextColor="@color/primary_light"
+                        app:layout_constraintBottom_toTopOf="@+id/emailContainer"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintHorizontal_weight="5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/nickContainer"
+                        app:layout_constraintVertical_weight="1"
+                        app:startIconDrawable="@drawable/ic_phone_android_blue_24dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/phoneField"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="phone"
+                            android:textSize="21sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/nickContainer"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="center|start"
+                        android:hint="@string/def_nickname"
+                        android:inputType="textLongMessage"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingBottom="8dp"
+                        app:boxStrokeColor="@color/primary_light"
+                        app:endIconMode="clear_text"
+                        app:helperText="@string/help_nickname"
+                        app:hintTextColor="@color/primary_light"
+                        app:layout_constraintBottom_toTopOf="@+id/phoneContainer"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintHorizontal_weight="5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fullNameContainer"
+                        app:layout_constraintVertical_chainStyle="packed"
+                        app:layout_constraintVertical_weight="1"
+                        app:startIconDrawable="@drawable/ic_person_blue_24dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/nickField"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="text"
+                            android:textSize="21sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/locationContainer"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|start"
+                        android:hint="@string/def_location"
+                        android:inputType="textLongMessage|textMultiLine|textCapWords"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingBottom="8dp"
+                        app:boxStrokeColor="@color/primary_light"
+                        app:endIconMode="none"
+                        app:helperText="@string/help_location"
+                        app:hintTextColor="@color/primary_light"
+                        app:layout_constraintBottom_toTopOf="@+id/register"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_chainStyle="spread"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/passwordContainer"
+                        app:layout_constraintVertical_weight="1"
+                        app:startIconDrawable="@drawable/ic_location_city_blue_24dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/locationField"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:focusableInTouchMode="false"
+                            android:inputType="textMultiLine|text|textCapWords"
+                            android:textSize="21sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/passwordContainer"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|start"
+                        android:hint="@string/def_password"
+                        android:inputType="textPassword"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingBottom="8dp"
+                        android:textSize="21sp"
+                        app:boxStrokeColor="@color/primary_light"
+                        app:endIconMode="password_toggle"
+                        app:hintTextColor="@color/primary_light"
+                        app:layout_constraintBottom_toTopOf="@+id/locationContainer"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintHorizontal_weight="5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/emailContainer"
+                        app:layout_constraintVertical_weight="1"
+                        app:startIconDrawable="@drawable/ic_lock_outline_black_24dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/passwordField"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="textPassword"
+                            android:textSize="21sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/register"
+                        style="?attr/materialButtonOutlinedStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:backgroundTint="@color/colorAccent"
+                        android:elevation="2dp"
+                        android:padding="8dp"
+                        android:text="@string/register_profile_r"
+                        android:textColor="@android:color/white"
+                        android:textSize="22sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintHorizontal_weight="5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/locationContainer"
+                        app:layout_constraintVertical_weight="1"
+                        app:strokeColor="@color/colorSecondary" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <Space
+                    android:id="@+id/space22"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/constraintLayout2"
+                    app:layout_constraintVertical_weight="0.5" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBarPE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

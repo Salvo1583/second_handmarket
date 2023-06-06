@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:ignore="MissingDefaultResource">
+
+    <Space
+        android:id="@+id/space17"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/photo_background6"
+        app:layout_constraintBottom_toTopOf="@id/space18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/space17"
+        app:layout_constraintVertical_weight="5">
+
+        <Space
+            android:id="@+id/space19"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageProfile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_weight="0.5" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageProfile"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:padding="3dp"
+            android:src="@drawable/male_profile_image"
+            app:civ_border_color="@color/strokeCircle"
+            app:civ_border_width="2dp"
+            app:layout_constraintBottom_toTopOf="@+id/fullNameField"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/space19"
+            app:layout_constraintVertical_weight="6"
+            app:srcCompat="@drawable/male_profile_image" />
+
+        <ProgressBar
+            android:id="@+id/progressBar4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/imageProfile"
+            app:layout_constraintEnd_toEndOf="@+id/imageProfile"
+            app:layout_constraintStart_toStartOf="@+id/imageProfile"
+            app:layout_constraintTop_toBottomOf="@+id/space19" />
+
+        <TextView
+            android:id="@+id/fullNameField"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="@string/def_fullname"
+            android:textColor="@color/strokeCircle"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/space20"
+            app:layout_constraintEnd_toEndOf="@+id/imageProfile"
+            app:layout_constraintStart_toStartOf="@+id/imageProfile"
+            app:layout_constraintTop_toBottomOf="@+id/imageProfile"
+            app:layout_constraintVertical_weight="2.5" />
+
+        <TextView
+            android:id="@+id/ratingUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_ratingvalue_profile"
+            android:clickable="true"
+            android:drawableStart="@drawable/ic_star_yellow_24dp"
+            android:drawablePadding="2sp"
+            android:focusable="true"
+            android:gravity="center"
+            android:paddingStart="7dp"
+            android:paddingEnd="7dp"
+            android:shadowRadius="50"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:visibility="invisible"
+            app:drawableTint="@color/fillRating"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageProfile"
+            app:layout_constraintTop_toTopOf="@+id/imageProfile" />
+
+        <Space
+            android:id="@+id/space20"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fullNameField" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Space
+        android:id="@+id/space18"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/guideline8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintGuide_percent="0.4"
+        app:layout_constraintTop_toBottomOf="@+id/space18" />
+
+    <Space
+        android:id="@+id/space21"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/space18"
+        app:layout_constraintVertical_weight="0.5" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@android:color/white"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        app:layout_constraintBottom_toTopOf="@id/space22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/space21"
+        app:layout_constraintVertical_weight="7">
+
+        <ImageView
+            android:id="@+id/nickIcon"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:padding="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/nickField"
+            app:layout_constraintEnd_toStartOf="@+id/nickField"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/nickField"
+            app:layout_constraintVertical_weight="1"
+            app:srcCompat="@drawable/ic_person_blue_24dp" />
+
+        <TextView
+            android:id="@+id/nickField"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center|start"
+            android:padding="4dp"
+            android:text="@string/def_nickname"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toTopOf="@+id/phoneField"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_weight="5"
+            app:layout_constraintStart_toEndOf="@+id/nickIcon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_weight="1" />
+
+        <ImageView
+            android:id="@+id/phoneIcon"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:padding="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/phoneField"
+            app:layout_constraintEnd_toStartOf="@+id/phoneField"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/phoneField"
+            app:layout_constraintVertical_weight="1"
+            app:srcCompat="@drawable/ic_phone_android_blue_24dp" />
+
+        <TextView
+            android:id="@+id/phoneField"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center|start"
+            android:padding="4dp"
+            android:text="@string/def_phone"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toTopOf="@+id/emailField"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_weight="5"
+            app:layout_constraintStart_toEndOf="@+id/phoneIcon"
+            app:layout_constraintTop_toBottomOf="@+id/nickField"
+            app:layout_constraintVertical_weight="1" />
+
+        <ImageView
+            android:id="@+id/emailIcon"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@android:color/transparent"
+            android:padding="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/emailField"
+            app:layout_constraintEnd_toStartOf="@+id/emailField"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/emailField"
+            app:layout_constraintVertical_weight="1"
+            app:srcCompat="@drawable/ic_email_blue_24dp" />
+
+        <TextView
+            android:id="@+id/emailField"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center|start"
+            android:padding="4dp"
+            android:text="@string/def_email"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toTopOf="@+id/locationField"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_weight="5"
+            app:layout_constraintStart_toEndOf="@+id/emailIcon"
+            app:layout_constraintTop_toBottomOf="@+id/phoneField"
+            app:layout_constraintVertical_weight="1" />
+
+        <ImageView
+            android:id="@+id/locationIcon"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:padding="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/locationField"
+            app:layout_constraintEnd_toStartOf="@+id/locationField"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/locationField"
+            app:layout_constraintVertical_weight="1"
+            app:srcCompat="@drawable/ic_location_city_blue_24dp" />
+
+        <TextView
+            android:id="@+id/locationField"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center|start"
+            android:padding="4dp"
+            android:text="@string/def_location"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_weight="5"
+            app:layout_constraintStart_toEndOf="@+id/locationIcon"
+            app:layout_constraintTop_toBottomOf="@+id/emailField"
+            app:layout_constraintVertical_weight="1" />
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Space
+        android:id="@+id/space22"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+        app:layout_constraintVertical_weight="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
